@@ -1,0 +1,135 @@
+* {
+    /* padding:0;
+    margin:0; */
+    /* box-sizing: border-box; */
+   font-family: 'Oswald', sans-serif;
+}
+
+
+
+body { 
+    background: rgb(204, 204, 204);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+.forma { 
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45rem;
+    height: 37rem;
+    margin-top: 50px;
+    border-radius: 45px; 
+    box-shadow:-2px 0px 33px 0px rgba(0,0,0,0.75);
+}
+
+.ALL { 
+    
+    background-color: rgb(255, 255, 255);
+    width: 40rem;
+    height: 34rem;
+    text-align: center;
+}
+
+
+.one { 
+
+    width:100%;
+    display: grid;
+    height: 60% ;
+    margin-bottom: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    
+}
+
+.one2 {
+     width:100%;
+    display: grid;
+    height: 60% ;
+    margin-bottom: 40px;
+   border-bottom: 1px solid #000;
+}
+    
+.one1 { 
+
+    width:100%;
+    display: grid;
+    margin-bottom: 60px ;
+    
+  
+    
+}
+
+.ONEE {
+
+    margin: 20px;
+    font-size: larger;
+    
+}
+   
+.send-btn { 
+
+    position: relative;
+    
+    
+    color: rgb(255, 255, 255);
+    background-color: #282727;
+    
+    border-color:#000000;
+    border-style: solid;
+    border-width: 2px;
+    height: 45px;
+    width: 110px;
+    align-items: center;
+    
+    cursor: pointer;
+    border-radius: 18px;
+    font-family: 'Oswald', sans-serif;
+    
+    
+
+
+}
+
+form input, textarea { 
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    
+}
+
+textarea {
+
+     border-top: 1px solid #000;
+}
+
+#input-field {
+
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+form {
+
+    font-size: 18px;
+    
+    
+}
+
+.biggerform 
+{
+height: 35px;
+
+}

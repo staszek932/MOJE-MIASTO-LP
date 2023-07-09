@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background: rgb(204, 204, 204);
+    height: 200vh;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "cover content";
+    box-shadow:-2px 0px 33px 0px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.cover{
+    grid-area: cover;
+    height: 80vh;
+    background-image: url('okładka.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.content{
+    grid-area: content;
+    background:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+.nav{
+    margin: 10px 10px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: rgb(71, 70, 70);
+    padding-left: calc(10% - 10px);
+    
+}
+.content-body{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+/*.pages{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: gray;
+    position: relative;
+    transform: translateY(38px);
+}*/
+.pages span{
+    margin-top: 15px;
+}
+.black-label{
+    display: flex;
+    width: 75%; 
+    position: relative;
+    /* bottom: 65px; */
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+.black-label p{
+
+   
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(5, 5, 5);
+    
+
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .title{
+        font-size: 30px;
+    }
+    .black-label p{
+        font-size: 2vw;
+    }
+    button{ 
+        transform: scale(80%);
+    }
+    .crt {
+        margin-right: -25px;
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .title{
+        font-size: 34px;
+    }
+    .black-label p{
+        font-size: 2vw;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .title{
+        font-size: 44px;
+    }
+    .black-label p{
+        font-size: 15px;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .title{
+        font-size: 44px;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .title{
+        font-size: 54px;
+    }
+  }
+
+
+.title{
+    color: rgb(0, 0, 0);
+  
+}
+.prix {
+     
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.crt {
+    right: 10px;
+    position: absolute;
+}
+
+
+
+
+button{
+
+    /* position: relative; */
+    /* left: 250%; */
+    color: rgb(255, 255, 255);
+    background-color: #282727;
+    
+    border-color:#000000;
+    border-style: solid;
+    border-width: 2px;
+    height: 45px;
+    width: 110px;
+    
+    cursor: pointer;
+    border-radius: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+
+}
+.active{
+    color: black;
+    position: relative;
+    transform: translateX(60px);
+}
+.active::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 67px;
+    right: 117%;
+    top: 45%;
+    background-color: #555;
+    height: .2em;
+    min-height: 1px;
+    z-index: 1;
+}
